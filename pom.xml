@@ -21,6 +21,7 @@
         <crowdar.cucumber.option>src/test/resources/features --glue com/crowdar --glue com/crowdar/bdd/cukes  --tags ${crowdar.cucumber.filter} --tags 'not @Ignore' --plugin com.crowdar.examples.report.Reporter: --plugin pretty</crowdar.cucumber.option>
         <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
         <crowdar.remoteDriverType></crowdar.remoteDriverType>
+        <crowdar.appLocation></crowdar.appLocation>
         <crowdar.reporter.avent>true</crowdar.reporter.avent>
     </properties>
 
@@ -33,9 +34,19 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd>Pixel3</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\golde\\\\Desktop\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
-                <crowdar.deviceName>Pixel3</crowdar.deviceName>
+                <crowdar.avd>Didi</crowdar.avd>
+                <crowdar.appLocation>E:\\\\Crowdar\\\\Didi\\\\ai.di\\\\lippia-mobile-sample-project\\\\sample_apk\\\\PROD_aidi_1.6.4_v56.apk</crowdar.appLocation>
+                <crowdar.deviceName>Didi</crowdar.deviceName>
+            </properties>
+        </profile>
+        <profile>
+            <id>Fisico</id>
+            <properties>
+                <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilitiesFisico.json</crowdar.projectType.driverCapabilities.jsonFile>
+                <cucumber.runner>testng.xml</cucumber.runner>
+                <crowdar.appLocation></crowdar.appLocation>
+                <crowdar.deviceName>Galaxi J7 Prime</crowdar.deviceName>
             </properties>
         </profile>
         <profile>

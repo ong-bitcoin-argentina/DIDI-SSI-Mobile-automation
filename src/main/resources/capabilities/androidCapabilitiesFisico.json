@@ -1,0 +1,9 @@
+{
+  "deviceName": "{{deviceName}}",
+  "app": "{{app}}",
+  "platformName": "Android",
+  "resetKeyboard": "true",
+  "unicodeKeyboard": "true",
+  "appPackage": "com.aidi",
+  "appActivity": "com.aidi.MainActivity"
+}
